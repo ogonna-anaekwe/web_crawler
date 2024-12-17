@@ -1,0 +1,12 @@
+concurrency:
+  enabled: True
+  workers: 10 # overridden if the number of domains to be crawled exceeds this
+
+domains:  
+  - url: https://www.live-eo.com////
+    sleep_duration: 5 # due to rate limits
+    parser: html.parser    
+  
+  - url: https://jsonformatter.org/
+    sleep_duration: 5
+    parser: html.parser
